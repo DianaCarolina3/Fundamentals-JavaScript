@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time in Javascritp</title>
+</head>
+
+<body>
+  <script>
+    console.log("a")
+    //se agrega al la cola de tareas y carga al final en 2segundos
+    setTimeout(() => console.log("b"), 2000)
+    console.log("c")
+
+    //se agrega a la cola de tareas y carga en 5s despues de que se ejecute for
+    setTimeout(() => console.log('d'), 5000)
+    for (var i = 0; i < 100000; i++) {
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    const sacha = {
+      nombre: 'Sacha',
+      apellido: 'litzi',
+      edad: 17
+    }
+    const simon = {
+      nombre: 'Simon',
+      apellido: 'litzi',
+      edad: 20
+    }
+
+    //modifica el objeto en memoria, creando efecto de lado
+    // const cumpleanos = (persona) => persona.edad++
+
+    //crea nuevo objeto en memoria
+    const cumpleanosInmutable = persona => ({
+      ...persona,
+      edad: persona.edad + 1
+    })
+
+    const sachaViejo = cumpleanosInmutable(sacha)
+    const simonViejo = cumpleanosInmutable(simon)
+
+
+  </script>
+</body>
+
+</html>

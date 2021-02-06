@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!--  13 |_4__
+
+    13 - 4 = 9    1
+    9 - 4 = 5     1
+    5 - 4 = 1     1
+    1 - 4 = -3    0
+  -->
+
+  <script>
+
+    function dividirEnteros(dividendo, divisor) {
+      if (dividendo < divisor) {
+        return 0
+      }
+
+      return 1 + dividirEnteros(dividendo - divisor, divisor)
+    }
+
+    // var num = 1
+    // for (var num = 1; num <= 10; num++) {
+    //   num++
+    //   console.log(num)
+    // }
+
+    // var n = 1
+    // while (n <= 10) {
+    //   n = n
+    // }
+    // console.log(n)
+
+  </script>
+
+</body>
+
+</html>
